@@ -10,7 +10,6 @@ Supports Python 3. It requires the packages: numpy, matplotlib, scipy.
 - Fast Fourier transform
 - Autocorrelation
 - Embedding time
-- False nearest neighbors
 - Phase space reconstruction
 - Correlation sum and correlation dimension
 - Lyapunov exponents
