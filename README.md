@@ -15,7 +15,6 @@ Supports Python 3. It requires the packages: numpy, matplotlib, scipy.
 - Lyapunov exponents
 - Kaplan–Yorke conjecture
 
-
 References:
 1. Kantz, Holger, and Thomas Schreiber. Nonlinear time series analysis. Vol. 7. Cambridge university press, 2004.
 2. Aoki, Kazunori. Nonlinear dynamics and chaos in semiconductors. CRC Press, 2000.
