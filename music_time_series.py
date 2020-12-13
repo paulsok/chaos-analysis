@@ -12,14 +12,15 @@ def musdat(file='Toccata.wav'):
     Output (data : array {Data read from wav file})
     """
     samplerate, data = wavfile.read(file)
+    print(f"number of points = {data.shape[0]}")
     print(f"number of channels = {data.shape[1]}")
 
     length = data.shape[0] / samplerate
     print(f"length = {length}s")
     time = np.linspace(0., length, data.shape[0])
     
-    plt.plot(time, data[:, 0], label="Left channel")
-    plt.plot(time, data[:, 1], label="Right channel")
+    plt.plot(time[::100], data[::100, 0], label="Left channel")
+    plt.plot(time[::100], data[::100, 1], label="Right channel")
     plt.legend()
     plt.xlabel("Time [s]")
     plt.ylabel("Amplitude")
