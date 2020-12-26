@@ -1,12 +1,13 @@
 # chaos-analysis
 
-A jupyter script implementing several methods for analysis of chaotic behavior of experimental time series of different nature.
+A jupyter script implementing several methods for analysis of chaotic behavior of music time series.
 
 ### Requirements
 Supports Python 3. It requires the packages: numpy, matplotlib, scipy.
 
 ### Methods
 
+- Reading \*.wav files
 - Fast Fourier transform
 - Autocorrelation
 - Embedding time
