@@ -24,3 +24,4 @@ References:
 6. Schölzel, Christopher. (2019, June 16). Nonlinear measures for dynamical systems (Version 0.5.2). Zenodo.
 7. https://pypi.org/project/nolds/
 8. https://www.researchgate.net/publication/253461833_Instabilities_in_the_spin_system_of_optically_oriented_electrons_and_nuclei_in_semiconductors
+9. https://www.nature.com/articles/s42003-019-0715-9
