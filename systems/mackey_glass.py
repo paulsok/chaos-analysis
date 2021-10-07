@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 def mackey_glass(length=10000, x0=None, a=0.2, b=0.1, c=10.0, tau=23.0,
-                 n=1000, sample=0.46, discard=250):
+                 n=1000, sample=0.46, discard=1000):
     """Generate time series using the Mackey-Glass equation.
 
     Generates time series using the discrete approximation of the
@@ -62,6 +62,6 @@ def mackey_glass(length=10000, x0=None, a=0.2, b=0.1, c=10.0, tau=23.0,
 
 if __name__ == '__main__':
     time_series = mackey_glass(length=10000, x0=None, a=0.2, b=0.1, c=10.0, tau=23.0,
-                               n=1000, sample=0.46, discard=250)
+                               n=1000, sample=0.46, discard=1000)
     plt.plot(time_series)
     plt.show()

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def randomwalk(length=10000, level=0.2, discard=1000):
+def randomwalk(length=10000, level=0, discard=1000):
     """Generate time series from the random walk
        (a stochastic, non-stationary signal).
 
@@ -33,6 +33,6 @@ def randomwalk(length=10000, level=0.2, discard=1000):
 
 
 if __name__ == '__main__':
-    time_series = randomwalk(length=10000, level=0.2, discard=1000)
+    time_series = randomwalk(length=10000, level=0, discard=1000)
     plt.plot(time_series)
     plt.show()

@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
 
-def roessler(length=10000, x0=None, a=0.2, b=0.2, c=5.7, step=0.001,
-             sample=0.1, discard=1000):
+def rossler(length=10000, x0=None, a=0.2, b=0.2, c=5.7, step=0.001,
+            sample=0.1, discard=1000):
     """Generate time series using the Rössler oscillator described (1976),
        "An equation for continuous chaos".
 
@@ -48,7 +48,7 @@ def roessler(length=10000, x0=None, a=0.2, b=0.2, c=5.7, step=0.001,
 
 
 if __name__ == '__main__':
-    time_series = roessler(length=10000, x0=None, a=0.2, b=0.2, c=5.7,
-                           step=0.001, sample=0.1, discard=1000)
+    time_series = rossler(length=10000, x0=None, a=0.2, b=0.2, c=5.7,
+                          step=0.001, sample=0.1, discard=1000)
     plt.plot(time_series)
     plt.show()

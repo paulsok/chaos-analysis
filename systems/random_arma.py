@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def random_arma(length=10000, level=0.2, p=1, theta=2, discard=1000):
+def random_arma(length=10000, level=0, p=1, theta=2, discard=1000):
     """Generate time series from the random ARMA model
        with Gaussian-distributed error.
 
@@ -40,6 +40,6 @@ def random_arma(length=10000, level=0.2, p=1, theta=2, discard=1000):
 
 
 if __name__ == '__main__':
-    time_series = random_arma(length=10000, level=0.2, p=0.8, theta=1, discard=1000)
+    time_series = random_arma(length=10000, level=0, p=0.8, theta=1, discard=1000)
     plt.plot(time_series)
     plt.show()
