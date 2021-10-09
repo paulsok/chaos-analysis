@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def poincare(length=10000, level=0.2, b=1.13, tau=0.75, discard=1000):
+def poincare(length=10000, level=0, b=1.13, tau=0.75, discard=1000):
     """The following is slightly modified from the script originally
        written by Leon Glass for Nonlinear Dynamics in Physiology
        and Medicine (2003).
@@ -54,7 +54,7 @@ def poincare(length=10000, level=0.2, b=1.13, tau=0.75, discard=1000):
 
 
 if __name__ == '__main__':
-    _beats, _phi = poincare(length=10000, level=0.2, b=1.13, tau=0.75, discard=1000)
+    _beats, _phi = poincare(length=10000, level=0, b=1.13, tau=0.75, discard=1000)
     plt.plot(_beats)
     plt.plot(_phi)
     plt.show()

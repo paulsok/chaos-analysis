@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def henon(length=10000, level=0.2, a=1.25, b=0.3, discard=1000):
+def henon(length=10000, level=0, a=1.25, b=0.3, discard=1000):
     """Simulate the Henon map described in Henon (1976),
        "A two-dimensional mapping with a strange attractor".
 
@@ -48,7 +48,7 @@ def henon(length=10000, level=0.2, a=1.25, b=0.3, discard=1000):
 
 
 if __name__ == '__main__':
-    _x, _y = henon(length=10000, level=0.2, a=1.25, b=0.3, discard=1000)
+    _x, _y = henon(length=10000, level=0, a=1.25, b=0.3, discard=1000)
     plt.plot(_x)
     plt.plot(_y)
     plt.show()

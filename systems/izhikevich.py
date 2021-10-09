@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def izhikevich(length=10000, level=0.2, tau=0.25, a=0.2, b=2, c=-56, d=-16, mu=-99, discard=1000):
+def izhikevich(length=10000, level=0, tau=0.25, a=0.2, b=2, c=-56, d=-16, mu=-99, discard=1000):
     """Simulate the Izhikevich spiking neuron model described in Izhikevich (2003),
        "Simple model of spiking neurons" and Izhikevich (2004), "Which model to use
        for cortical spiking neurons?".
@@ -56,6 +56,6 @@ def izhikevich(length=10000, level=0.2, tau=0.25, a=0.2, b=2, c=-56, d=-16, mu=-
 
 
 if __name__ == '__main__':
-    time_series = izhikevich(length=10000, level=0.2, tau=0.25, a=0.2, b=2, c=-56, d=-16, mu=-99, discard=1000)
+    time_series = izhikevich(length=10000, level=0, tau=0.25, a=0.2, b=2, c=-56, d=-16, mu=-99, discard=1000)
     plt.plot(time_series)
     plt.show()

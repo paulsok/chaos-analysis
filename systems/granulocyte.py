@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def granulocyte(length=10000, level=0.2, a=0.2, b=0.1, c=10, s=10, discard=1000):
+def granulocyte(length=10000, level=0, a=0.2, b=0.1, c=10, s=10, discard=1000):
     """ Simulate the circulating granulocyte levels model described in
     Mackey and Glass (1977), "Oscillation and chaos in physiological control systems".
 

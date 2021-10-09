@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def logistic(length=10000, level=0.2, r=3.5, discard=1000):
+def logistic(length=10000, level=0, r=3.5, discard=1000):
     """Simulate the logistic map described in May (1976),
        "Simple mathematical models with very complicated dynamics".
 
@@ -38,6 +38,6 @@ def logistic(length=10000, level=0.2, r=3.5, discard=1000):
 
 
 if __name__ == '__main__':
-    time_series = logistic(length=10000, level=0.2, r=3.5, discard=1000)
+    time_series = logistic(length=10000, level=0, r=3.5, discard=1000)
     plt.plot(time_series)
     plt.show()

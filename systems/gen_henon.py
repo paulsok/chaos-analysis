@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def gen_henon(length=10000, level=0.2,  a=1.76, b=0.1, discard=1000):
+def gen_henon(length=10000, level=0,  a=1.76, b=0.1, discard=1000):
     """Simulate the generalized Henon map described in Richter (2002),
        "The generalized Henon maps: examples for higher-dimensional chaos".
 
@@ -39,6 +39,6 @@ def gen_henon(length=10000, level=0.2,  a=1.76, b=0.1, discard=1000):
 
 
 if __name__ == '__main__':
-    time_series = gen_henon(length=10000, level=0.2,  a=1.76, b=0.1, discard=1000)
+    time_series = gen_henon(length=10000, level=0,  a=1.76, b=0.1, discard=1000)
     plt.plot(time_series)
     plt.show()

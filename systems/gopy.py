@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def gopy(length=10000, level=0.2, sigma=1.5, discard=1000):
+def gopy(length=10000, level=0, sigma=1.5, discard=1000):
     """Simulate the GOPY system described in Grebogi et al (1984),
        "Strange attractors that are not chaotic".
 
@@ -42,6 +42,6 @@ def gopy(length=10000, level=0.2, sigma=1.5, discard=1000):
 
 
 if __name__ == '__main__':
-    time_series = gopy(length=10000, level=.2, sigma=1.5, discard=1000)
+    time_series = gopy(length=10000, level=0, sigma=1.5, discard=1000)
     plt.plot(time_series)
     plt.show()

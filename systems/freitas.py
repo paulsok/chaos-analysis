@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def freitas(length=10000, level=0.2, discard=1000):
+def freitas(length=10000, level=0, discard=1000):
     """Simulate the nonlinear stochastic map
        described in Freitas et al (2009).
 
@@ -36,6 +36,6 @@ def freitas(length=10000, level=0.2, discard=1000):
 
 
 if __name__ == '__main__':
-    time_series = freitas(length=10000, level=0.2, discard=1000)
+    time_series = freitas(length=10000, level=0, discard=1000)
     plt.plot(time_series)
     plt.show()
