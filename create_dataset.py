@@ -26,8 +26,8 @@ from systems.rossler import rossler
 script_path = 'systems'
 files = [f for f in listdir(script_path) if isfile(join(script_path, f))]
 
-n = 5000  # number of points to simulate
-data = np.zeros([len(files)*10-14, n+1])
+n = 10000  # number of points to simulate
+data = np.zeros([len(files)*10-4, n+1])
 
 # (1) generate cubic map
 regimes = ['periodic', 'chaotic', 'Heagy-Hammel', 'S3', '2T', '1T']
@@ -38,11 +38,10 @@ for i, regime in enumerate(regimes):
 
 # (2) generate cyclostationary
 m1 = 10  # number of different time series of the same system
-tau = np.linspace(100, 1000, num=m1)
 t = np.linspace(10, 500, num=m1)
 
-for i, tau, t, in zip(range(m1), tau, t):
-    time_series = cyclostationary(length=n, tau=tau, t=t)
+for i, t in zip(range(m1), t):
+    time_series = cyclostationary(length=n, t=t)
     data[i+6, :] = np.concatenate(([2], time_series), axis=0)
 
 # (3) generate freitas
@@ -88,7 +87,7 @@ for i, a, b in zip(range(5), a, b):
     data[i+61, :] = np.concatenate(([7], y), axis=0)
 
 # (8) generate ikeda
-mu = np.linspace(0.51, 0.95, num=5)
+mu = np.linspace(0.51, 0.89, num=5)
 
 for i, mu in zip(range(5), mu):
     x, y = ikeda(length=n, level=0, mu=mu, discard=int(n/10))
@@ -114,9 +113,9 @@ for i, r in zip(range(m1), r):
     data[i+86, :] = np.concatenate(([10], time_series), axis=0)
 
 # (11) generate lorenz
-sigma = np.linspace(10, 20, num=5)
-beta = np.linspace(1, 10, num=5)
-rho = np.linspace(20, 60, num=5)
+sigma = np.linspace(12, 17, num=5)
+beta = np.linspace(1.5, 4.5, num=5)
+rho = np.linspace(41, 49, num=5)
 
 for i, sigma, beta, rho in zip(range(5), sigma, beta, rho):
     time_series = lorenz(length=n, sigma=sigma, beta=beta,
@@ -136,7 +135,7 @@ for i, a, b, c in zip(range(m1), a, b, c):
     data[i+111, :] = np.concatenate(([12], time_series), axis=0)
 
 # (13) generate noise sine
-mu = np.linspace(1, 5, num=m1)
+mu = np.linspace(1, 2.5, num=m1)
 
 for i, mu in zip(range(m1), mu):
     time_series = noise_sine(length=n, mu=mu, level=0, discard=int(n/10))

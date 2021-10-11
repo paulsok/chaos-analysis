@@ -1,12 +1,10 @@
 # chaos-analysis
-
-A jupyter script implementing several methods for analysis of chaotic behavior of experimental time series of different nature.
+A code implementing several methods for analysis of chaotic behavior of experimental time series of different nature.
 
 ### Requirements
-Supports Python 3. It requires the packages: numpy, matplotlib, scipy.
+Supports Python 3, required libraries in the file -> requirements.txt
 
 ### Methods
-
 - Fast Fourier transform
 - Autocorrelation
 - Embedding time
@@ -14,14 +12,14 @@ Supports Python 3. It requires the packages: numpy, matplotlib, scipy.
 - Correlation sum and correlation dimension
 - Lyapunov exponents
 - Kaplan–Yorke conjecture
+- Time series generation for different systems
+- Classification with Multilayer Perceptron (MLP)
 
 References:
 1. Kantz, Holger, and Thomas Schreiber. Nonlinear time series analysis. Vol. 7. Cambridge university press, 2004.
 2. Aoki, Kazunori. Nonlinear dynamics and chaos in semiconductors. CRC Press, 2000.
 3. J. Awrejcewicz *et. al.*, Entropy, 20, 175 (2018).
-4. M. Mannattil *et. al.*, Astrophys. J. 833, 208 (2016).
-5. https://github.com/manu-mannattil/nolitsa
-6. Schölzel, Christopher. (2019, June 16). Nonlinear measures for dynamical systems (Version 0.5.2). Zenodo.
-7. https://pypi.org/project/nolds/
-8. https://www.researchgate.net/publication/253461833_Instabilities_in_the_spin_system_of_optically_oriented_electrons_and_nuclei_in_semiconductors
-9. https://www.nature.com/articles/s42003-019-0715-9
+4. M. Mannattil *et. al.*, Astrophys. J. 833, 208 (2016) {https://github.com/manu-mannattil/nolitsa}.
+5. Schölzel, Christopher, Nonlinear measures for dynamical systems, Zenodo (2019) {https://pypi.org/project/nolds/}.
+6. D. Toker *et. al.*, Commun. Biol. 3, 11 (2020).
+7. H. I. Fawaz *et. al.*, Data Min. Knowl. Disc. 33, 917–963 (2019) {https://github.com/hfawaz/dl-4-tsc}.
