@@ -25,8 +25,9 @@ from systems.rossler import rossler
 # all scripts for dataset creation
 script_path = 'systems'
 files = [f for f in listdir(script_path) if isfile(join(script_path, f))]
+print(files)
 
-n = 10000  # number of points to simulate
+n = 1000  # number of points to simulate
 data = np.zeros([len(files)*10-4, n+1])
 
 # (1) generate cubic map
