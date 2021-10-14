@@ -14,6 +14,7 @@ Supports Python 3, required libraries in the file -> requirements.txt
 - Kaplan–Yorke conjecture
 - Time series generation for different systems
 - Classification with Multilayer Perceptron (MLP)
+- Classification with Fully Convolutional Network (FCN)
 
 References:
 1. Kantz, Holger, and Thomas Schreiber. Nonlinear time series analysis. Vol. 7. Cambridge university press, 2004.
