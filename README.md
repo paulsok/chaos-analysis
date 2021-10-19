@@ -12,6 +12,7 @@ Supports Python 3, required libraries in the file -> requirements.txt
 - Correlation sum and correlation dimension
 - Lyapunov exponents
 - Kaplan–Yorke conjecture
+- 0-1 Test for chaos
 - Time series generation for different systems
 - Classification with Multilayer Perceptron (MLP)
 - Classification with Fully Convolutional Network (FCN)
@@ -24,3 +25,4 @@ References:
 5. Schölzel, Christopher, Nonlinear measures for dynamical systems, Zenodo (2019) {https://pypi.org/project/nolds/}.
 6. D. Toker *et. al.*, Commun. Biol. 3, 11 (2020).
 7. H. I. Fawaz *et. al.*, Data Min. Knowl. Disc. 33, 917–963 (2019) {https://github.com/hfawaz/dl-4-tsc}.
+8. G. A. Gottwald *et. al.*, arXiv:0906.1418 (2009) {http://arxiv.org/pdf/0906.1418v1}.
