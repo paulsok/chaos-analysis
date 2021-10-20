@@ -14,8 +14,14 @@ Supports Python 3, required libraries in the file -> requirements.txt
 - Kaplan–Yorke conjecture
 - 0-1 Test for chaos
 - Time series generation for different systems
-- Classification with Multilayer Perceptron (MLP)
-- Classification with Fully Convolutional Network (FCN)
+- Classification with classical models 
+  - k-NN
+  - Random Forest
+  - Nearest Centroid
+  - Naive Bayes
+  - Linear SVM
+- Classification with multilayer perceptron (MLP)
+- Classification with shallow architecture
 
 References:
 1. Kantz, Holger, and Thomas Schreiber. Nonlinear time series analysis. Vol. 7. Cambridge university press, 2004.
