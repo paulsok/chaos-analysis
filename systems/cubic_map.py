@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def cubic_map(length=10000, f=0, q=0, a=1, level=0, regime='periodic', discard=1000):
+def cubic_map(length=10000, level=0, regime='periodic', discard=1000):
     """Generate time series using the periodically forced cubic map described in Venkatesan
         and  Lakshmanan (2001), "Interruption of torus doubling bifurcation and genesis
         of strange nonchaotic attractors in a quasiperiodically forced map:
@@ -64,6 +64,6 @@ def cubic_map(length=10000, f=0, q=0, a=1, level=0, regime='periodic', discard=1
 
 
 if __name__ == '__main__':
-    time_series = cubic_map(length=10000, f=0, q=0, a=1, level=0, regime='1T', discard=1000)
+    time_series = cubic_map(length=1000, level=0, regime='1T', discard=1000)
     plt.plot(time_series)
     plt.show()
