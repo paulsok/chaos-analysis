@@ -1,3 +1,5 @@
+#!opt/anaconda3/bin/python python
+# -*- coding: utf-8 -*-
 from os import listdir
 from os.path import isfile
 from posixpath import join
