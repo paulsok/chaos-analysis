@@ -22,6 +22,7 @@ Supports Python 3, required libraries in the file -> requirements.txt
   - Linear SVM
 - Classification with multilayer perceptron (MLP)
 - Classification with shallow architecture
+- Classification with deep architecture
 
 References:
 1. Kantz, Holger, and Thomas Schreiber. Nonlinear time series analysis. Vol. 7. Cambridge university press, 2004.
